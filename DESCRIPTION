@@ -1,9 +1,18 @@
 Package: hubway
-Title: What the Package Does (one line, title case)
+Title: Tools to Work with the 'Hubway' 'API'
 Version: 0.0.0.9000
 Authors@R: c(person("Bob", "Rudis", email = "bob@rudis.net", role = c("aut", "cre")))
-Description: What the package does (one paragraph).
-Depends: R (>= 3.3.1)
+Description: An interface to the 'Hubway' 'API'.
+Depends:
+    R (>= 3.3.1)
 License: AGPL + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Imports:
+  httr,
+  jsonlite,
+  dplyr,
+  tibble
+Suggests:
+    testthat
+RoxygenNote: 5.0.1

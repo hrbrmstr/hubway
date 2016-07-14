@@ -1,0 +1,59 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+`hubway` : Tools to Work with the 'Hubway' 'API'
+
+The following functions are implemented:
+
+- `get_stations`:	Retrieve the current status of all Hubway stations
+
+The following data sets are included:
+
+### Installation
+
+```{r eval=FALSE}
+devtools::install_github("brudis-r7/hubway")
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, error=FALSE}
+options(width=120)
+```
+
+### Usage
+
+```{r}
+library(hubway)
+
+# current verison
+packageVersion("hubway")
+
+get_stations()
+
+```
+
+### Test Results
+
+```{r}
+library(hubway)
+library(testthat)
+
+date()
+
+test_dir("tests/")
+```
+
+### Code of Conduct
+
+Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). 
+By participating in this project you agree to abide by its terms.
