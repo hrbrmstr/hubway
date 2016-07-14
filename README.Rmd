@@ -23,7 +23,7 @@ The following data sets are included:
 ### Installation
 
 ```{r eval=FALSE}
-devtools::install_github("brudis-r7/hubway")
+devtools::install_github("hrbrmstr/hubway")
 ```
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE, error=FALSE}

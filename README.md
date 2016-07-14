@@ -11,7 +11,7 @@ The following data sets are included:
 ### Installation
 
 ``` r
-devtools::install_github("brudis-r7/hubway")
+devtools::install_github("hrbrmstr/hubway")
 ```
 
 ### Usage
@@ -27,15 +27,15 @@ get_stations()
 #> # A tibble: 162 x 18
 #>    station_id num_bikes_available num_bikes_disabled num_docks_available num_docks_disabled is_installed is_renting
 #>         <chr>               <int>              <int>               <int>              <int>        <int>      <int>
-#> 1           3                   5                  0                  10                  0            1          1
-#> 2           4                   6                  0                   9                  0            1          1
+#> 1           3                   4                  0                  11                  0            1          1
+#> 2           4                   7                  0                   8                  0            1          1
 #> 3           5                   2                  1                  11                  1            1          1
-#> 4           6                   0                  2                  12                  1            1          1
+#> 4           6                   4                  2                   8                  1            1          1
 #> 5           7                  14                  1                   0                  0            1          1
 #> 6           8                  11                  0                   4                  0            1          1
-#> 7           9                   6                  0                  13                  0            1          1
-#> 8          10                   7                  1                   3                  0            1          1
-#> 9          11                   8                  0                   7                  0            1          1
+#> 7           9                   3                  0                  16                  0            1          1
+#> 8          10                   6                  1                   4                  0            1          1
+#> 9          11                   7                  0                   8                  0            1          1
 #> 10         12                   5                  1                   9                  0            1          1
 #> # ... with 152 more rows, and 11 more variables: is_returning <int>, last_reported <chr>,
 #> #   eightd_has_available_keys <lgl>, name <chr>, short_name <chr>, lat <dbl>, lon <dbl>, region_id <int>,
@@ -49,7 +49,7 @@ library(hubway)
 library(testthat)
 
 date()
-#> [1] "Thu Jul 14 15:18:31 2016"
+#> [1] "Thu Jul 14 15:33:03 2016"
 
 test_dir("tests/")
 #> testthat results ========================================================================================================
